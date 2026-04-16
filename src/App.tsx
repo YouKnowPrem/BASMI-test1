@@ -9,6 +9,7 @@ import { SecurityParams } from './pages/SecurityParams';
 import { Tactical } from './pages/Tactical';
 import { Aerospace } from './pages/Aerospace';
 import { Indigenization } from './pages/Indigenization';
+import { Contact } from './pages/Contact';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/tactical" element={<Tactical />} />
             <Route path="/aerospace" element={<Aerospace />} />
             <Route path="/indigenization" element={<Indigenization />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
