@@ -12,6 +12,7 @@ export const Navbar = () => {
     { name: 'Tactical Gear', path: '/tactical' },
     { name: 'Aerospace & Naval', path: '/aerospace' },
     { name: 'Indigenization', path: '/indigenization' },
+    { name: 'Contact Us', path: '/contact' },
   ];
 
   return (
