@@ -39,50 +39,62 @@ export const Tactical = () => {
             </motion.div>
           </div>
         </section>
+      </div>
 
-        {/* Immersive Product Section */}
-        <div className="mb-24 w-full bg-[#020202] rounded-xl overflow-hidden glass-panel border border-white/5 relative shadow-2xl">
-          <div className="group/container flex flex-col md:flex-row w-full h-[800px] md:h-[700px] bg-[#020202]">
-            
-            {/* Card 1 */}
-            <div className="flex-1 relative overflow-hidden group/card transition-all duration-[600ms] ease-[cubic-bezier(0.25,1,0.5,1)] filter brightness-[0.6] contrast-[1.1] md:group-hover/container:opacity-40 md:group-hover/container:brightness-50 md:hover:!opacity-100 md:hover:!brightness-110 md:hover:!contrast-125 md:hover:flex-[1.2] cursor-pointer">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.15)_0%,transparent_50%)] opacity-0 group-hover/card:opacity-100 transition-opacity duration-[800ms] pointer-events-none z-10 mix-blend-screen" />
-              <img src="/soldier_ballistic.png" alt="Ballistic Protection" className="absolute w-full h-full object-cover object-top transition-transform duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] scale-[1.02] group-hover/card:scale-[1.08] z-0" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10 opacity-80" />
-              <div className="absolute inset-x-0 bottom-16 md:bottom-28 z-20 flex justify-center items-end text-center px-4">
-                <h3 className="font-black text-white text-2xl md:text-4xl uppercase tracking-[0.1em] md:tracking-[0.15em] transition-all duration-[600ms] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover/card:drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]">
-                  Ballistic<br/>Protection
-                </h3>
-              </div>
+      {/* Immersive Product Section - Full Bleed (Mehler Systems Inspired) */}
+      <div className="w-full bg-[#020202] border-y border-white/10 relative shadow-2xl mb-24">
+        <div className="group/container flex flex-col lg:flex-row w-full min-h-[90vh] bg-[#020202]">
+          
+          {/* Card 1 */}
+          <div className="flex-1 relative overflow-hidden group/card transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] filter brightness-[0.55] contrast-[1.1] lg:group-hover/container:opacity-50 lg:group-hover/container:brightness-50 lg:hover:!opacity-100 lg:hover:!brightness-110 lg:hover:!contrast-125 lg:hover:flex-[1.25] cursor-pointer">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.25)_0%,transparent_60%)] opacity-0 group-hover/card:opacity-100 transition-opacity duration-[800ms] pointer-events-none z-10 mix-blend-overlay" />
+            <img src="/soldier_ballistic.png" alt="Ballistic Protection" className="absolute w-full h-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(0.25,1,0.5,1)] scale-[1.0] group-hover/card:scale-[1.08] z-0" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/80 z-10 opacity-60 group-hover/card:opacity-30 transition-opacity duration-[800ms]" />
+            <div className="absolute inset-0 flex justify-center items-center text-center px-4 z-20">
+              <h3 className="font-bold text-white text-3xl md:text-5xl uppercase tracking-[0.2em] md:leading-tight transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] opacity-80 group-hover/card:opacity-100 group-hover/card:drop-shadow-[0_0_20px_rgba(255,255,255,0.9)] group-hover/card:scale-105">
+                Ballistic<br/>Protection
+              </h3>
             </div>
-
-            {/* Card 2 */}
-            <div className="flex-1 relative overflow-hidden group/card transition-all duration-[600ms] ease-[cubic-bezier(0.25,1,0.5,1)] filter brightness-[0.6] contrast-[1.1] border-y md:border-y-0 md:border-x border-white/5 md:group-hover/container:opacity-40 md:group-hover/container:brightness-50 md:hover:!opacity-100 md:hover:!brightness-110 md:hover:!contrast-125 md:hover:flex-[1.2] cursor-pointer">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.15)_0%,transparent_50%)] opacity-0 group-hover/card:opacity-100 transition-opacity duration-[800ms] pointer-events-none z-10 mix-blend-screen" />
-              <img src="/soldier_carrying.png" alt="Carrying Systems" className="absolute w-full h-full object-cover object-top transition-transform duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] scale-[1.02] group-hover/card:scale-[1.08] z-0" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10 opacity-80" />
-              <div className="absolute inset-x-0 bottom-16 md:bottom-28 z-20 flex justify-center items-end text-center px-4">
-                <h3 className="font-black text-white text-2xl md:text-4xl uppercase tracking-[0.1em] md:tracking-[0.15em] transition-all duration-[600ms] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover/card:drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]">
-                  Carrying<br/>Systems
-                </h3>
-              </div>
+            {/* Explore Button */}
+            <div className="absolute inset-x-0 bottom-16 md:bottom-24 flex justify-center z-20 opacity-0 group-hover/card:opacity-100 transition-all duration-[700ms] translate-y-6 group-hover/card:translate-y-0 delay-75">
+               <span className="border border-white/30 bg-black/40 backdrop-blur-md text-white px-8 py-3 text-xs md:text-sm uppercase tracking-[0.25em] font-semibold hover:bg-white/20 hover:border-white transition-all">Explore Category</span>
             </div>
-
-            {/* Card 3 */}
-            <div className="flex-1 relative overflow-hidden group/card transition-all duration-[600ms] ease-[cubic-bezier(0.25,1,0.5,1)] filter brightness-[0.6] contrast-[1.1] md:group-hover/container:opacity-40 md:group-hover/container:brightness-50 md:hover:!opacity-100 md:hover:!brightness-110 md:hover:!contrast-125 md:hover:flex-[1.2] cursor-pointer">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.15)_0%,transparent_50%)] opacity-0 group-hover/card:opacity-100 transition-opacity duration-[800ms] pointer-events-none z-10 mix-blend-screen" />
-              <img src="/soldier_clothing.png" alt="Tactical Clothing" className="absolute w-full h-full object-cover object-top transition-transform duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] scale-[1.02] group-hover/card:scale-[1.08] z-0" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent z-10 opacity-80" />
-              <div className="absolute inset-x-0 bottom-16 md:bottom-28 z-20 flex justify-center items-end text-center px-4">
-                <h3 className="font-black text-white text-2xl md:text-4xl uppercase tracking-[0.1em] md:tracking-[0.15em] transition-all duration-[600ms] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover/card:drop-shadow-[0_0_15px_rgba(255,255,255,0.7)]">
-                  Tactical<br/>Clothing
-                </h3>
-              </div>
-            </div>
-
           </div>
-        </div>
 
+          {/* Card 2 */}
+          <div className="flex-1 relative overflow-hidden group/card transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] filter brightness-[0.55] contrast-[1.1] border-y lg:border-y-0 lg:border-x border-white/10 lg:group-hover/container:opacity-50 lg:group-hover/container:brightness-50 lg:hover:!opacity-100 lg:hover:!brightness-110 lg:hover:!contrast-125 lg:hover:flex-[1.25] cursor-pointer">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.25)_0%,transparent_60%)] opacity-0 group-hover/card:opacity-100 transition-opacity duration-[800ms] pointer-events-none z-10 mix-blend-overlay" />
+            <img src="/soldier_carrying.png" alt="Carrying Systems" className="absolute w-full h-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(0.25,1,0.5,1)] scale-[1.0] group-hover/card:scale-[1.08] z-0" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/80 z-10 opacity-60 group-hover/card:opacity-30 transition-opacity duration-[800ms]" />
+            <div className="absolute inset-0 flex justify-center items-center text-center px-4 z-20">
+              <h3 className="font-bold text-white text-3xl md:text-5xl uppercase tracking-[0.2em] md:leading-tight transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] opacity-80 group-hover/card:opacity-100 group-hover/card:drop-shadow-[0_0_20px_rgba(255,255,255,0.9)] group-hover/card:scale-105">
+                Carrying<br/>Systems
+              </h3>
+            </div>
+            <div className="absolute inset-x-0 bottom-16 md:bottom-24 flex justify-center z-20 opacity-0 group-hover/card:opacity-100 transition-all duration-[700ms] translate-y-6 group-hover/card:translate-y-0 delay-75">
+               <span className="border border-white/30 bg-black/40 backdrop-blur-md text-white px-8 py-3 text-xs md:text-sm uppercase tracking-[0.25em] font-semibold hover:bg-white/20 hover:border-white transition-all">Explore Category</span>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="flex-1 relative overflow-hidden group/card transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] filter brightness-[0.55] contrast-[1.1] lg:group-hover/container:opacity-50 lg:group-hover/container:brightness-50 lg:hover:!opacity-100 lg:hover:!brightness-110 lg:hover:!contrast-125 lg:hover:flex-[1.25] cursor-pointer">
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.25)_0%,transparent_60%)] opacity-0 group-hover/card:opacity-100 transition-opacity duration-[800ms] pointer-events-none z-10 mix-blend-overlay" />
+            <img src="/soldier_clothing.png" alt="Tactical Clothing" className="absolute w-full h-full object-cover object-top transition-transform duration-[1200ms] ease-[cubic-bezier(0.25,1,0.5,1)] scale-[1.0] group-hover/card:scale-[1.08] z-0" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/80 z-10 opacity-60 group-hover/card:opacity-30 transition-opacity duration-[800ms]" />
+            <div className="absolute inset-0 flex justify-center items-center text-center px-4 z-20">
+              <h3 className="font-bold text-white text-3xl md:text-5xl uppercase tracking-[0.2em] md:leading-tight transition-all duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] opacity-80 group-hover/card:opacity-100 group-hover/card:drop-shadow-[0_0_20px_rgba(255,255,255,0.9)] group-hover/card:scale-105">
+                Tactical<br/>Clothing
+              </h3>
+            </div>
+            <div className="absolute inset-x-0 bottom-16 md:bottom-24 flex justify-center z-20 opacity-0 group-hover/card:opacity-100 transition-all duration-[700ms] translate-y-6 group-hover/card:translate-y-0 delay-75">
+               <span className="border border-white/30 bg-black/40 backdrop-blur-md text-white px-8 py-3 text-xs md:text-sm uppercase tracking-[0.25em] font-semibold hover:bg-white/20 hover:border-white transition-all">Explore Category</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Product Grid */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-8 tracking-wider uppercase border-l-4 border-white/20 pl-4">Equipment Categories</h2>
