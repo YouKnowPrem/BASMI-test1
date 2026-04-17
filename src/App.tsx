@@ -1,5 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import { LoadingScreen } from './components/LoadingScreen';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
@@ -21,10 +23,15 @@ const ScrollToTop = () => {
 };
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <Router>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen text-gray-200">
+      <AnimatePresence>
+        {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
+      </AnimatePresence>
+      <div className={`flex flex-col min-h-screen text-gray-200 transition-opacity duration-1000 ${isLoading ? 'opacity-0 overflow-hidden h-screen' : 'opacity-100'}`}>
         <Navbar />
         <main className="flex-grow">
           <Routes>
