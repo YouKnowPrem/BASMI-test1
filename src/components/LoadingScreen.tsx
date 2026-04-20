@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Rocket } from 'lucide-react';
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -86,29 +85,6 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
               transition={{ ease: "linear" }}
             />
           </div>
-
-          {/* Flying Rocket inspired by transition request */}
-          <motion.div
-            className="absolute text-cyan-400 opacity-80 filter drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]"
-            initial={{ left: '-10%', bottom: '-20px', rotate: 45, opacity: 0 }}
-            animate={{ 
-              left: '110%', 
-              bottom: '120px',
-              opacity: [0, 1, 1, 1, 1, 0] 
-            }}
-            transition={{ 
-              duration: 2.3,
-              ease: "easeInOut",
-              delay: 0.2
-            }}
-          >
-            <Rocket size={32} className="relative z-10" />
-            <motion.div 
-              className="absolute top-full left-1/2 -translate-x-1/2 w-1 h-12 bg-gradient-to-t from-transparent to-cyan-500 blur-sm rounded-full -mt-2 -z-10"
-              animate={{ opacity: [0.5, 1, 0.5], height: ["2rem", "4rem", "2rem"] }}
-              transition={{ duration: 0.5, repeat: Infinity }}
-            />
-          </motion.div>
         </div>
       </div>
     </motion.div>
