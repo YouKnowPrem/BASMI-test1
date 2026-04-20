@@ -20,10 +20,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <NavLink to="/" className="flex items-center space-x-3">
-            <img src="/basmi_logo.png" alt="BASMI Logo" className="h-10 w-auto object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-            <span className="text-xl font-bold tracking-widest text-white uppercase select-none">
-              BASMI
-            </span>
+            <img src="/basmi_logo.png" alt="BASMI Logo" className="h-16 w-auto object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
           </NavLink>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-6">
