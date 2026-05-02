@@ -5,14 +5,15 @@ import { ArrowRight } from 'lucide-react';
 export const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#050505]">
-      {/* Background Image / Video Placeholder */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        {/* Placeholder for video */}
-        <div className="w-full h-full bg-[#0a0a0a] flex items-center justify-center opacity-40">
-           <span className="text-gray-500 font-mono tracking-widest">[ SECURITY INFRASTRUCTURE VIDEO BACKGROUND ]</span>
-        </div>
+        <div 
+          className="w-full h-full bg-cover bg-center bg-no-repeat opacity-50"
+          style={{ backgroundImage: 'url(/background.png)' }}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/40 to-transparent" />
+        {/* We can remove the right gradient or keep it, but centered text doesn't need right-gradient as much. We'll make it radial or just keep a darker overlay. */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20">
@@ -20,7 +21,7 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="max-w-4xl"
+          className="max-w-4xl mx-auto flex flex-col items-center text-center"
         >
           <div className="inline-flex items-center space-x-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
@@ -35,7 +36,7 @@ export const Hero = () => {
             Delivering end-to-end hostile vehicle mitigation, perimeter security, access control, and integrated protection systems.
           </p>
           
-          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center">
             <Link 
               to="/security"
               className="inline-flex items-center justify-center px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white rounded-md font-medium transition-all group backdrop-blur-md"
