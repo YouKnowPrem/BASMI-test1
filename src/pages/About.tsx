@@ -5,12 +5,18 @@ export const About = () => {
     <div className="min-h-screen bg-[#050505] pt-32 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="max-w-3xl mb-16">
-          <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight uppercase mb-6">
+        <div className="max-w-4xl mb-16 space-y-6">
+          <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight uppercase mb-8">
             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">BASMI</span>
           </h1>
           <p className="text-lg text-gray-400 font-light leading-relaxed">
-            BASMI is an integrated security solutions provider delivering globally certified technologies for defence and civilian applications. Our focus remains on the design, deployment, and lifecycle support of our systems, ensuring high reliability, system availability, and operational efficiency.
+            BASMI is an integrated, technology-driven security and force-protection solutions provider based in New Delhi, India, delivering end-to-end Hostile Vehicle Mitigation (HVM), perimeter security, access control, and integrated protection systems. BASMI serves a diverse client base that includes the Indian Army, Indian Navy, Indian Air Force, DRDO laboratories, Defence Public Sector Undertakings (DPSUs), critical government facilities, transportation hubs, industrial complexes, energy installations, commercial campuses, and other high-value strategic assets. Led by a leadership team with over two decades of operational experience in the Indian Armed Forces, BASMI combines real-world operational insight with globally certified security technologies to design, deploy, and sustain high-reliability protection systems across both defence and civilian domains. Operational reliability, lifecycle support, and system availability form the core of BASMI's approach.
+          </p>
+          <p className="text-lg text-gray-400 font-light leading-relaxed">
+            BASMI partners with globally accredited manufacturers whose facilities are TÜV SÜD audited and certified to ISO 9001:2015 and ISO 45001:2018, meeting stringent international benchmarks including IWA 14-1:2013, ISO, and CE standards. The manufacturing facility is listed with the UK National Protective Security Authority (NPSA- formerly CPNI) and is a full member of the Perimeter Security Suppliers Association (PSSA), UK ensuring solutions suitable for defence, critical infrastructure, and high-risk commercial environments.
+          </p>
+          <p className="text-lg text-gray-400 font-light leading-relaxed">
+            BASMI's range of innovative, independently tested solutions play a critical role in protecting valuable assets worldwide from vehicle-borne, asymmetric, and forced-entry threats. Its manufacturing partner is the only Asian OEM to have successfully crash-tested 14 HVM systems at HORIBA MIRA, UK.
           </p>
         </div>
 
