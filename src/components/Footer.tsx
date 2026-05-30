@@ -91,7 +91,15 @@ export const Footer = () => {
         {/* BOTTOM METADATA & COPYRIGHT */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-gray-500 mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} BASMI India. All rights reserved.
+            © 2026 All rights reserved. | Made with 💖 | By{' '}
+            <a 
+              href="https://webit24.com" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-gray-400 hover:text-white transition-colors duration-200"
+            >
+              WebItUp24
+            </a>
           </p>
           <div className="flex space-x-6 text-sm text-gray-500">
             <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
