@@ -7,7 +7,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="flex flex-col items-start mb-6">
-              <img src="/basmi_logo.png" alt="BASMI Logo" className="h-12 w-auto object-contain mb-3" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <img 
+                src="/BASMI_svg.svg" 
+                alt="BASMI Logo" 
+                className="h-16 w-auto object-contain mb-3 drop-shadow-[0_0_8px_rgba(59,130,246,0.2)]" 
+                onError={(e) => { e.currentTarget.style.display = 'none'; }} 
+              />
               <span className="text-xl font-bold tracking-widest text-white uppercase">BASMI</span>
               <span className="text-xs text-blue-500 tracking-widest uppercase mt-1 font-semibold">Defence. Innovation. Technology.</span>
             </Link>
@@ -20,20 +25,25 @@ export const Footer = () => {
           </div>
           <div>
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Divisions</h3>
-            <ul className="space-y-3 text-sm text-gray-400">
-              <li><Link to="/security" className="hover:text-white transition-colors">HVM Systems</Link></li>
-              <li><Link to="/tactical" className="hover:text-white transition-colors">Access Control Systems</Link></li>
-              <li><Link to="/uas" className="hover:text-white transition-colors">UAS & Counter-UAS</Link></li>
-              <li><Link to="/aerospace" className="hover:text-white transition-colors">Tactical & Defence Equipment</Link></li>
+            <ul className="space-y-2.5 text-sm text-gray-400">
+              <li><Link to="/about" className="hover:text-white transition-colors">1. Core Capabilities</Link></li>
+              <li><Link to="/tactical" className="hover:text-white transition-colors">2. Defence Equipment & Technology Solutions</Link></li>
+              <li><Link to="/uas" className="hover:text-white transition-colors">3. Aerospace Systems</Link></li>
+              <li><Link to="/aerospace" className="hover:text-white transition-colors">4. Surface and Sub-Surface Systems</Link></li>
+              <li><Link to="/tactical" className="hover:text-white transition-colors">5. Tactical & Mission Support</Link></li>
+              <li><Link to="/security" className="hover:text-white transition-colors">6. Security & Force Protection Systems</Link></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">7. Advanced & Dual-Use Technologies</Link></li>
+              <li><Link to="/indigenization" className="hover:text-white transition-colors">8. Indigenisation & Self-reliance</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">9. Project & Lifecycle Management</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Company</h3>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/indigenization" className="hover:text-white transition-colors">Indigenization</Link></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">About BASMI</Link></li>
+              <li><Link to="/indigenization" className="hover:text-white transition-colors">Indigenisation</Link></li>
               <li><Link to="/aerospace" className="hover:text-white transition-colors">Aerospace & Naval</Link></li>
-              <li><Link to="#" className="hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
           <div>
@@ -60,7 +70,6 @@ export const Footer = () => {
             &copy; {new Date().getFullYear()} BASMI India. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-500">
-            <Link to="#" className="hover:text-white transition-colors">ISO 9001:2015</Link>
             <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
           </div>
         </div>

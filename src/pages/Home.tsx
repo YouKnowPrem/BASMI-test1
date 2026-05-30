@@ -4,10 +4,10 @@ import { Shield, Settings, Server, Radar, CheckCircle } from 'lucide-react';
 
 export const Home = () => {
   const highlights = [
-    { title: "ISO 9001:2015 Certified" },
-    { title: "Int. Standards: IWA 14, PAS 68, ASTM" },
-    { title: "Only Asian OEM partnered with HORIBA MIRA (UK)" },
-    { title: "Trusted by Defence, Govt & Private Sectors" }
+    { title: "Strategic Operational Leadership from Indian Armed Forces" },
+    { title: "Partners with ISO 9001 & ISO 45001 Certified Facilities" },
+    { title: "Deploying Systems Tested to Global Benchmarks (IWA 14-1, PAS 68)" },
+    { title: "Committed to Atmanirbhar Bharat (Indigenous Self-Reliance)" }
   ];
 
   const solutions = [
@@ -44,7 +44,7 @@ export const Home = () => {
              <div>
                 <h2 className="text-sm font-bold text-blue-500 mb-2 tracking-widest uppercase">About Basmi</h2>
                 <h3 className="text-3xl md:text-5xl font-extrabold text-white mb-6">Built To Protect</h3>
-                <p className="text-gray-400 text-lg mb-6 leading-relaxed">
+                <p className="text-gray-400 text-lg mb-6 leading-relaxed text-justify">
                   BASMI is a technology-driven security solutions provider based in New Delhi. We specialize in Hostile Vehicle Mitigation (HVM), Perimeter security, Access control systems, and Integrated protection solutions.
                 </p>
                 <div className="mb-8">
