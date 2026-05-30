@@ -1,10 +1,27 @@
+/** ============================================================================
+ *  BASMI Defence Systems - Footer Component (Footer.tsx)
+ *  ----------------------------------------------------------------------------
+ *  Purpose: Responsive website footer with maps details, business links, and a
+ *           mock newsletter consultation submission form.
+ *  Editable Sections:
+ *    - To change division links or pages, modify Link components under Divisions.
+ *    - To change company pages, modify Link components under Company.
+ *    - To change address or contact mail, edit plain text fields.
+ *  ============================================================================
+ */
+
 import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
+    // --- MAIN FOOTER CONTAINER ---
     <footer className="border-t border-white/10 bg-[#050505] pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* FOUR COLUMN GRID SYSTEM */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+          
+          {/* COLUMN 1: Company Logo, Address & Primary Secure Email */}
           <div className="col-span-1 md:col-span-1">
             <Link to="/" className="flex flex-col items-start mb-6">
               <img 
@@ -22,6 +39,8 @@ export const Footer = () => {
               Email: <a href="mailto:sales@basmi-india.com" className="text-blue-400 hover:text-blue-300">sales@basmi-india.com</a>
             </p>
           </div>
+
+          {/* COLUMN 2: Divisions / Integrated Solutions Links */}
           <div>
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Divisions</h3>
             <ul className="space-y-2.5 text-sm text-gray-400">
@@ -36,6 +55,8 @@ export const Footer = () => {
               <li><Link to="/contact" className="hover:text-white transition-colors">9. Project & Lifecycle Management</Link></li>
             </ul>
           </div>
+
+          {/* COLUMN 3: Corporate Directory & Quick Links */}
           <div>
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Company</h3>
             <ul className="space-y-3 text-sm text-gray-400">
@@ -45,6 +66,8 @@ export const Footer = () => {
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
+
+          {/* COLUMN 4: Business Consultation Form Area */}
           <div>
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">Request Consultation</h3>
             <p className="text-sm text-gray-400 mb-4">Reach out to our experts for end-to-end integrated protection systems.</p>
@@ -64,6 +87,8 @@ export const Footer = () => {
             </form>
           </div>
         </div>
+
+        {/* BOTTOM METADATA & COPYRIGHT */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-gray-500 mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} BASMI India. All rights reserved.

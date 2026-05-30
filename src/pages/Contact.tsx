@@ -1,3 +1,14 @@
+/** ============================================================================
+ *  BASMI Defence Systems - Contact Page Component (Contact.tsx)
+ *  ----------------------------------------------------------------------------
+ *  Purpose: Displays official corporate headquarters addresses, email, secure 
+ *           phone request information, and a contact inquiry form.
+ *  Editable Parameters:
+ *    - To change headquarters address, edit standard text inside under MapPin.
+ *    - Contact email can be updated in a and href mailto properties.
+ *  ============================================================================
+ */
+
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { GlassCard } from '../components/GlassCard';
@@ -6,6 +17,8 @@ export const Contact = () => {
   return (
     <div className="min-h-screen bg-[#050505] pt-24 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        
+        {/* PAGE HEADER INTRODUCTION */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -20,14 +33,16 @@ export const Contact = () => {
           </p>
         </motion.div>
 
+        {/* TWO-COLUMN CONTACT OVERVIEW */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           
-          {/* Contact Details */}
+          {/* COLUMN 1: Corporate Details */}
           <div className="space-y-8">
             <GlassCard className="p-8">
               <h2 className="text-2xl font-bold text-white mb-6 uppercase tracking-wider">Corporate Headquarters</h2>
               <div className="space-y-6">
                 
+                {/* Physical HQ Address */}
                 <div className="flex items-start space-x-4">
                   <div className="p-3 glass-panel rounded-lg shrink-0">
                     <MapPin className="text-white h-6 w-6" />
@@ -44,6 +59,7 @@ export const Contact = () => {
                   </div>
                 </div>
 
+                {/* Secure Primary Email */}
                 <div className="flex items-start space-x-4">
                   <div className="p-3 glass-panel rounded-lg shrink-0">
                     <Mail className="text-white h-6 w-6" />
@@ -56,6 +72,7 @@ export const Contact = () => {
                   </div>
                 </div>
 
+                {/* Telephone Request (Secure Protocol) */}
                 <div className="flex items-start space-x-4">
                   <div className="p-3 glass-panel rounded-lg shrink-0">
                     <Phone className="text-white h-6 w-6" />
@@ -71,13 +88,13 @@ export const Contact = () => {
               </div>
             </GlassCard>
 
-            {/* Certifications or extra info could go here */}
+            {/* Thematic Footer Subtext */}
             <div className="p-8 border border-white/5 bg-white/[0.02] rounded-xl flex items-center justify-center">
               <span className="text-gray-500 font-mono text-xs tracking-widest uppercase">DEFENCE. INNOVATION. TECHNOLOGY.</span>
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* COLUMN 2: Secure Contact Form */}
           <GlassCard className="p-8">
             <h2 className="text-2xl font-bold text-white mb-6 uppercase tracking-wider">Secure Transmission</h2>
             <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>

@@ -1,7 +1,19 @@
+/** ============================================================================
+ *  BASMI Defence Systems - Corporate Profile Page Component (About.tsx)
+ *  ----------------------------------------------------------------------------
+ *  Purpose: Displays the company profile, operational mission, corporate values, 
+ *           operational frameworks (e.g. SWARAJ), and leadership credentials.
+ *  Editable Parameters:
+ *    - values array: Key pillars of business operations.
+ *    - leadership array: Operational areas and backgrounds of company leadership.
+ *  ============================================================================
+ */
+
 import { GlassCard } from '../components/GlassCard';
 import { Target, Compass, Award, Users, Handshake, ChevronRight, TrendingUp } from 'lucide-react';
 
 export const About = () => {
+  // --- STATIC VALUES & PRINCIPLES CONFIGURATION ---
   const values = [
     {
       title: "Innovation & Excellence",
@@ -25,6 +37,7 @@ export const About = () => {
     }
   ];
 
+  // --- STATIC LEADERSHIP & OPERATIONAL EXPERTISES ---
   const leadership = [
     {
       role: "Strategic Operational Leadership",
@@ -47,7 +60,7 @@ export const About = () => {
     <div className="min-h-screen bg-[#050505] pt-32 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Title Block */}
+        {/* 1. CORPORATE HEADER INTRO */}
         <div className="max-w-4xl mb-16 space-y-6">
           <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/25 rounded-full px-3 py-1 text-xs font-semibold text-blue-400 uppercase tracking-wider">
             Enterprise Profile
@@ -69,7 +82,7 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Mission and Vision Grid */}
+        {/* 2. MISSION AND VISION GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-24">
           <GlassCard className="p-8 md:p-10 border border-white/10 flex flex-col h-full hover:border-blue-500/30 transition-all duration-300">
             <div className="flex items-center space-x-4 mb-6">
@@ -96,7 +109,7 @@ export const About = () => {
           </GlassCard>
         </div>
 
-        {/* Core Values Section */}
+        {/* 3. CORE VALUES SECTION */}
         <div className="mb-24">
           <div className="flex items-center space-x-3 mb-10">
             <div className="bg-blue-600/10 p-2.5 rounded-lg text-blue-400 border border-blue-500/10">
@@ -115,9 +128,9 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Engagement Model, Outlook, and Partnerships Grid */}
+        {/* 4. ENGAGEMENT AND PARTNERSHIP FRAMEWORKS */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24">
-          {/* Engagement Model */}
+          {/* Partnership Engagement Model */}
           <GlassCard className="p-8 hover:border-blue-500/25 transition-all duration-300">
             <div className="flex items-center space-x-3 mb-6">
               <div className="bg-blue-600/10 p-2 rounded-lg text-blue-400">
@@ -135,7 +148,7 @@ export const About = () => {
             </div>
           </GlassCard>
 
-          {/* Outlook */}
+          {/* Strategic Outlook */}
           <GlassCard className="p-8 hover:border-blue-500/25 transition-all duration-300" delay={0.1}>
             <div className="flex items-center space-x-3 mb-6">
               <div className="bg-blue-600/10 p-2 rounded-lg text-blue-400">
@@ -151,7 +164,7 @@ export const About = () => {
             </div>
           </GlassCard>
 
-          {/* Strategic Partnerships */}
+          {/* Strategic Partnerships & Integrations */}
           <GlassCard className="p-8 hover:border-blue-500/25 transition-all duration-300" delay={0.2}>
             <div className="flex items-center space-x-3 mb-6">
               <div className="bg-blue-600/10 p-2 rounded-lg text-blue-400">
@@ -175,7 +188,7 @@ export const About = () => {
           </GlassCard>
         </div>
 
-        {/* Leadership Section */}
+        {/* 5. LEADERSHIP PROFILE SECTION */}
         <div className="border-t border-white/10 pt-16">
           <div className="flex items-center space-x-3 mb-10">
             <div className="bg-blue-600/10 p-2.5 rounded-lg text-blue-400 border border-blue-500/10">

@@ -1,15 +1,31 @@
+/** ============================================================================
+ *  BASMI Defence Systems - Navigation Bar Component (Navbar.tsx)
+ *  ----------------------------------------------------------------------------
+ *  Purpose: Responsive glassmorphic navigation bar with mega solutions dropdown.
+ *  Editable Sections: 
+ *    - To change dropdown links, modify the Link and NavLink URLs/labels.
+ *    - To change logo assets, update the img src="/BASMI_svg.svg".
+ *  ============================================================================
+ */
+
 import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 export const Navbar = () => {
+  // --- STATE MANAGEMENT ---
+  // isOpen: Controls the mobile drawer menu expand state.
   const [isOpen, setIsOpen] = useState(false);
+  // isSolutionsOpen: Controls the hover state of the desktop Solutions mega dropdown.
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
 
   return (
+    // --- MAIN NAVIGATION CONTAINER ---
     <nav className="fixed w-full z-50 glass-panel border-b border-white/10 rounded-none shadow-none bg-[#050505]/80 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
+          
+          {/* BRAND LOGO */}
           <NavLink to="/" className="flex items-center space-x-3 py-2">
             <img 
               src="/BASMI_svg.svg" 
@@ -19,6 +35,7 @@ export const Navbar = () => {
             />
           </NavLink>
           
+          {/* DESKTOP NAV MENU */}
           <div className="hidden lg:flex items-center space-x-6">
             <NavLink
               to="/about"
@@ -31,7 +48,7 @@ export const Navbar = () => {
               About BASMI
             </NavLink>
 
-            {/* Integrated Solutions Dropdown */}
+            {/* Integrated Solutions Dropdown Trigger */}
             <div 
               className="relative"
               onMouseEnter={() => setIsSolutionsOpen(true)}
@@ -50,7 +67,8 @@ export const Navbar = () => {
               {isSolutionsOpen && (
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[850px] z-50">
                   <div className="glass-panel p-6 grid grid-cols-3 gap-6 rounded-xl animate-fade-in">
-                    {/* Column 1 */}
+                    
+                    {/* COLUMN 1: Foundations & Technologies */}
                     <div>
                       <ul className="space-y-3.5 text-sm">
                         <li>
@@ -72,7 +90,7 @@ export const Navbar = () => {
                       </ul>
                     </div>
 
-                    {/* Column 2 */}
+                    {/* COLUMN 2: Aerospace & Indigenisation */}
                     <div>
                       <ul className="space-y-3.5 text-sm">
                         <li>
@@ -90,7 +108,7 @@ export const Navbar = () => {
                       </ul>
                     </div>
 
-                    {/* Column 3 */}
+                    {/* COLUMN 3: Force Protection */}
                     <div>
                       <ul className="space-y-3.5 text-sm">
                         <li>
@@ -131,6 +149,7 @@ export const Navbar = () => {
             </NavLink>
           </div>
 
+          {/* MOBILE MENU TOGGLE BUTTON */}
           <div className="flex lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -142,6 +161,7 @@ export const Navbar = () => {
         </div>
       </div>
 
+      {/* MOBILE NAV DRAWER PANEL */}
       {isOpen && (
         <div className="lg:hidden glass-panel rounded-none border-t border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
