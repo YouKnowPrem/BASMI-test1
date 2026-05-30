@@ -89,8 +89,8 @@ export const Footer = () => {
         </div>
 
         {/* BOTTOM METADATA & COPYRIGHT */}
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm text-gray-500 mb-4 md:mb-0">
+        <div className="mt-16 pt-8 border-t border-white/10 flex items-center justify-center text-center">
+          <p className="text-sm text-gray-500">
             © 2026 All rights reserved. | Made with 💖 | By{' '}
             <a 
               href="https://webit24.com" 
@@ -101,9 +101,6 @@ export const Footer = () => {
               WebItUp24
             </a>
           </p>
-          <div className="flex space-x-6 text-sm text-gray-500">
-            <Link to="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-          </div>
         </div>
       </div>
     </footer>
