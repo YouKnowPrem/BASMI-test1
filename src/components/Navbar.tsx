@@ -53,7 +53,7 @@ export const Navbar = () => {
                     {/* Column 1 */}
                     <div className="space-y-4">
                       <div>
-                        <h4 className="text-xs font-bold text-blue-500 uppercase tracking-widest mb-3 flex items-center">
+                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 flex items-center">
                           <Award className="h-4 w-4 mr-1.5" /> Foundations & Tech
                         </h4>
                         <ul className="space-y-3.5 text-sm">
@@ -80,7 +80,7 @@ export const Navbar = () => {
                     {/* Column 2 */}
                     <div className="space-y-4">
                       <div>
-                        <h4 className="text-xs font-bold text-blue-500 uppercase tracking-widest mb-3 flex items-center">
+                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 flex items-center">
                           <Cpu className="h-4 w-4 mr-1.5" /> Aerospace & Indigenisation
                         </h4>
                         <ul className="space-y-3.5 text-sm">
@@ -103,7 +103,7 @@ export const Navbar = () => {
                     {/* Column 3 */}
                     <div className="space-y-4">
                       <div>
-                        <h4 className="text-xs font-bold text-blue-500 uppercase tracking-widest mb-3 flex items-center">
+                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 flex items-center">
                           <Shield className="h-4 w-4 mr-1.5" /> Force Protection
                         </h4>
                         <ul className="space-y-3.5 text-sm">
@@ -173,11 +173,11 @@ export const Navbar = () => {
             </NavLink>
 
             {/* Mobile Dropdown Header for Solutions */}
-            <div className="px-3 py-2 text-base font-medium text-blue-500 border-t border-white/5 mt-2">
+            <div className="px-3 py-2 text-base font-medium text-gray-400 border-t border-white/5 mt-2">
               Integrated Solutions
             </div>
             
-            <div className="pl-4 space-y-1 text-sm border-l-2 border-blue-500/30 ml-3">
+            <div className="pl-4 space-y-1 text-sm border-l-2 border-white/10 ml-3">
               <Link to="/about" onClick={() => setIsOpen(false)} className="block px-3 py-1.5 text-gray-400 hover:text-white font-semibold">• 1. Core Capabilities</Link>
               <Link to="/tactical" onClick={() => setIsOpen(false)} className="block px-3 py-1.5 text-gray-400 hover:text-white font-semibold">• 2. Defence Equipment & Technology Solutions</Link>
               <Link to="/uas" onClick={() => setIsOpen(false)} className="block px-3 py-1.5 text-gray-400 hover:text-white font-semibold">• 3. Aerospace Systems</Link>
