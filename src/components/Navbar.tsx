@@ -68,7 +68,7 @@ export const Navbar = () => {
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[850px] z-50">
                   <div className="glass-panel p-6 grid grid-cols-3 gap-6 rounded-xl animate-fade-in">
                     
-                    {/* COLUMN 1: Foundations & Technologies */}
+                    {/* COLUMN 1: Capabilities & Solutions */}
                     <div>
                       <ul className="space-y-3.5 text-sm">
                         <li>
@@ -80,37 +80,19 @@ export const Navbar = () => {
                           <span className="text-xs text-gray-500 block mt-0.5">Strategic systems integration & equipment supply</span>
                         </li>
                         <li>
-                          <Link to="/about" className="text-gray-300 hover:text-white block font-medium transition-colors">7. Advanced & Dual-Use Technologies</Link>
-                          <span className="text-xs text-gray-500 block mt-0.5">Next-generation tech & dual-use applications</span>
-                        </li>
-                        <li>
-                          <Link to="/contact" className="text-gray-300 hover:text-white block font-medium transition-colors">9. Project & Lifecycle Management</Link>
-                          <span className="text-xs text-gray-500 block mt-0.5">Sustainment support & program consulting</span>
+                          <Link to="/uas" className="text-gray-300 hover:text-white block font-medium transition-colors">3. Aerospace Systems</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Unmanned aircraft and counter UAS systems</span>
                         </li>
                       </ul>
                     </div>
 
-                    {/* COLUMN 2: Aerospace & Indigenisation */}
+                    {/* COLUMN 2: Tactical & Protection Systems */}
                     <div>
                       <ul className="space-y-3.5 text-sm">
-                        <li>
-                          <Link to="/uas" className="text-gray-300 hover:text-white block font-medium transition-colors">3. Aerospace Systems</Link>
-                          <span className="text-xs text-gray-500 block mt-0.5">Unmanned aircraft and counter UAS systems</span>
-                        </li>
                         <li>
                           <Link to="/aerospace" className="text-gray-300 hover:text-white block font-medium transition-colors">4. Surface and Sub-Surface Systems</Link>
                           <span className="text-xs text-gray-500 block mt-0.5">Unmanned vessels & autonomous underwater vehicles</span>
                         </li>
-                        <li>
-                          <Link to="/indigenization" className="text-gray-300 hover:text-white block font-medium transition-colors">8. Indigenisation & Self-reliance</Link>
-                          <span className="text-xs text-gray-500 block mt-0.5">Aviation, marine, and sub-marine indigenised systems</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    {/* COLUMN 3: Force Protection */}
-                    <div>
-                      <ul className="space-y-3.5 text-sm">
                         <li>
                           <Link to="/tactical" className="text-gray-300 hover:text-white block font-medium transition-colors">5. Tactical & Mission Support</Link>
                           <span className="text-xs text-gray-500 block mt-0.5">Tactical gear & specialized support systems</span>
@@ -118,6 +100,24 @@ export const Navbar = () => {
                         <li>
                           <Link to="/security" className="text-gray-300 hover:text-white block font-medium transition-colors">6. Security & Force Protection Systems</Link>
                           <span className="text-xs text-gray-500 block mt-0.5">Hostile vehicle mitigation, perimeter security & integrated access</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* COLUMN 3: Advanced Tech & Lifecycle Management */}
+                    <div>
+                      <ul className="space-y-3.5 text-sm">
+                        <li>
+                          <Link to="/about" className="text-gray-300 hover:text-white block font-medium transition-colors">7. Advanced & Dual-Use Technologies</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Next-generation tech & dual-use applications</span>
+                        </li>
+                        <li>
+                          <Link to="/indigenization" className="text-gray-300 hover:text-white block font-medium transition-colors">8. Indigenisation & Self-reliance</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Aviation, marine, and sub-marine indigenised systems</span>
+                        </li>
+                        <li>
+                          <Link to="/contact" className="text-gray-300 hover:text-white block font-medium transition-colors">9. Project & Lifecycle Management</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Sustainment support & program consulting</span>
                         </li>
                       </ul>
                     </div>
