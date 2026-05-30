@@ -48,7 +48,7 @@ export const Navbar = () => {
 
               {/* Mega Dropdown Panel */}
               {isSolutionsOpen && (
-                <div className="absolute left-1/2 -translate-x-1/2 mt-1 w-[850px] glass-panel bg-[#050505]/95 border border-white/15 shadow-2xl p-6 grid grid-cols-3 gap-6 rounded-xl animate-fade-in backdrop-blur-2xl">
+                <div className="absolute left-1/2 -translate-x-1/2 mt-1 w-[850px] glass-panel p-6 grid grid-cols-3 gap-6 rounded-xl animate-fade-in">
                   {/* Column 1 */}
                   <div className="space-y-4">
                     <div>
@@ -170,7 +170,7 @@ export const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="lg:hidden glass-panel rounded-none border-t border-white/10 bg-[#050505]">
+        <div className="lg:hidden glass-panel rounded-none border-t border-white/10">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <NavLink
               to="/about"

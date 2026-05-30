@@ -16,7 +16,7 @@ export const Contact = () => {
             Contact <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-600">Us</span>
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Get in touch with BASMI for inquiries about integrated security solutions, tactical defense equipment, and aerospace innovations.
+            Get in touch with us for inquiries about integrated security solutions, tactical defense equipment, and aerospace innovations.
           </p>
         </motion.div>
 
@@ -73,7 +73,7 @@ export const Contact = () => {
 
             {/* Certifications or extra info could go here */}
             <div className="p-8 border border-white/5 bg-white/[0.02] rounded-xl flex items-center justify-center">
-              <span className="text-gray-500 font-mono text-sm tracking-widest uppercase">BASMI • DEFENCE • INNOVATION</span>
+              <span className="text-gray-500 font-mono text-xs tracking-widest uppercase">DEFENCE. INNOVATION. TECHNOLOGY.</span>
             </div>
           </div>
 

@@ -13,7 +13,6 @@ export const Footer = () => {
                 className="h-16 w-auto object-contain mb-3 drop-shadow-[0_0_8px_rgba(59,130,246,0.2)]" 
                 onError={(e) => { e.currentTarget.style.display = 'none'; }} 
               />
-              <span className="text-xl font-bold tracking-widest text-white uppercase">BASMI</span>
               <span className="text-xs text-blue-500 tracking-widest uppercase mt-1 font-semibold">Defence. Innovation. Technology.</span>
             </Link>
             <p className="text-sm text-gray-400 leading-relaxed mb-4">
