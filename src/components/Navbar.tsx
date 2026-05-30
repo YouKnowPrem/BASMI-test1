@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Menu, X, ChevronDown, Shield, Cpu, Award } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,72 +51,57 @@ export const Navbar = () => {
                 <div className="absolute left-1/2 -translate-x-1/2 top-full pt-2 w-[850px] z-50">
                   <div className="glass-panel p-6 grid grid-cols-3 gap-6 rounded-xl animate-fade-in">
                     {/* Column 1 */}
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 flex items-center">
-                          <Award className="h-4 w-4 mr-1.5" /> Foundations & Tech
-                        </h4>
-                        <ul className="space-y-3.5 text-sm">
-                          <li>
-                            <Link to="/about" className="text-gray-300 hover:text-white block font-medium transition-colors">1. Core Capabilities</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Strategic aerospace, defence & military systems</span>
-                          </li>
-                          <li>
-                            <Link to="/tactical" className="text-gray-300 hover:text-white block font-medium transition-colors">2. Defence Equipment & Technology Solutions</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Strategic systems integration & equipment supply</span>
-                          </li>
-                          <li>
-                            <Link to="/about" className="text-gray-300 hover:text-white block font-medium transition-colors">7. Advanced & Dual-Use Technologies</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Next-generation tech & dual-use applications</span>
-                          </li>
-                          <li>
-                            <Link to="/contact" className="text-gray-300 hover:text-white block font-medium transition-colors">9. Project & Lifecycle Management</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Sustainment support & program consulting</span>
-                          </li>
-                        </ul>
-                      </div>
+                    <div>
+                      <ul className="space-y-3.5 text-sm">
+                        <li>
+                          <Link to="/about" className="text-gray-300 hover:text-white block font-medium transition-colors">1. Core Capabilities</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Strategic aerospace, defence & military systems</span>
+                        </li>
+                        <li>
+                          <Link to="/tactical" className="text-gray-300 hover:text-white block font-medium transition-colors">2. Defence Equipment & Technology Solutions</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Strategic systems integration & equipment supply</span>
+                        </li>
+                        <li>
+                          <Link to="/about" className="text-gray-300 hover:text-white block font-medium transition-colors">7. Advanced & Dual-Use Technologies</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Next-generation tech & dual-use applications</span>
+                        </li>
+                        <li>
+                          <Link to="/contact" className="text-gray-300 hover:text-white block font-medium transition-colors">9. Project & Lifecycle Management</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Sustainment support & program consulting</span>
+                        </li>
+                      </ul>
                     </div>
 
                     {/* Column 2 */}
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 flex items-center">
-                          <Cpu className="h-4 w-4 mr-1.5" /> Aerospace & Indigenisation
-                        </h4>
-                        <ul className="space-y-3.5 text-sm">
-                          <li>
-                            <Link to="/uas" className="text-gray-300 hover:text-white block font-medium transition-colors">3. Aerospace Systems</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Unmanned aircraft and counter UAS systems</span>
-                          </li>
-                          <li>
-                            <Link to="/aerospace" className="text-gray-300 hover:text-white block font-medium transition-colors">4. Surface and Sub-Surface Systems</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Unmanned vessels & autonomous underwater vehicles</span>
-                          </li>
-                          <li>
-                            <Link to="/indigenization" className="text-gray-300 hover:text-white block font-medium transition-colors">8. Indigenisation & Self-reliance</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Aviation, marine, and sub-marine indigenised systems</span>
-                          </li>
-                        </ul>
-                      </div>
+                    <div>
+                      <ul className="space-y-3.5 text-sm">
+                        <li>
+                          <Link to="/uas" className="text-gray-300 hover:text-white block font-medium transition-colors">3. Aerospace Systems</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Unmanned aircraft and counter UAS systems</span>
+                        </li>
+                        <li>
+                          <Link to="/aerospace" className="text-gray-300 hover:text-white block font-medium transition-colors">4. Surface and Sub-Surface Systems</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Unmanned vessels & autonomous underwater vehicles</span>
+                        </li>
+                        <li>
+                          <Link to="/indigenization" className="text-gray-300 hover:text-white block font-medium transition-colors">8. Indigenisation & Self-reliance</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Aviation, marine, and sub-marine indigenised systems</span>
+                        </li>
+                      </ul>
                     </div>
 
                     {/* Column 3 */}
-                    <div className="space-y-4">
-                      <div>
-                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3 flex items-center">
-                          <Shield className="h-4 w-4 mr-1.5" /> Force Protection
-                        </h4>
-                        <ul className="space-y-3.5 text-sm">
-                          <li>
-                            <Link to="/tactical" className="text-gray-300 hover:text-white block font-medium transition-colors">5. Tactical & Mission Support</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Tactical gear & specialized support systems</span>
-                          </li>
-                          <li>
-                            <Link to="/security" className="text-gray-300 hover:text-white block font-medium transition-colors">6. Security & Force Protection Systems</Link>
-                            <span className="text-xs text-gray-500 block mt-0.5">Hostile vehicle mitigation, perimeter security & integrated access</span>
-                          </li>
-                        </ul>
-                      </div>
+                    <div>
+                      <ul className="space-y-3.5 text-sm">
+                        <li>
+                          <Link to="/tactical" className="text-gray-300 hover:text-white block font-medium transition-colors">5. Tactical & Mission Support</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Tactical gear & specialized support systems</span>
+                        </li>
+                        <li>
+                          <Link to="/security" className="text-gray-300 hover:text-white block font-medium transition-colors">6. Security & Force Protection Systems</Link>
+                          <span className="text-xs text-gray-500 block mt-0.5">Hostile vehicle mitigation, perimeter security & integrated access</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
