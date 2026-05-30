@@ -93,7 +93,7 @@ export const Footer = () => {
           <p className="text-sm text-gray-500">
             © 2026 All rights reserved. | Made with 💖 | By{' '}
             <a 
-              href="https://webit24.com" 
+              href="https://webitup24.com" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors duration-200"
